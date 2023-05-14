@@ -1,7 +1,6 @@
 export class LoginPage {
   navigateToPage() {
-    cy.get("#open-navigation-menu-mobile").click();
-    cy.contains("Log out").click();
+    cy.visit("https://www.edu.goit.global/account/login");
   }
 
   inputUserDataAndLogIn(email, password) {
